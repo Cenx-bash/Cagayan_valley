@@ -255,6 +255,7 @@ p {
   transform: translate(-50%, -50%);
   font: bold;
   font-family: "Kaushan Script", cursive;
+  font: bolder;
 }
 .ht1 {
   position: center;
@@ -267,6 +268,7 @@ p {
   transform: translate(-50%, -50%);
   font-family: "Kaushan Script", cursive;
   font: bold;
+  font: bolder;
 }
 .ht2 {
   font-size: 18px;
@@ -277,6 +279,7 @@ p {
   margin-left: 800px;
   transform: translate(-50%, -50%);
   font-family: "Kaushan Script", cursive;
+  font: bolder;
 }
 /* text-box zone-one */
 .zone-one {
