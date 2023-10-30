@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=League+Spartan:wght@900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+/*=======[ Other's ]=========*/
+#Banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(Img/Banner.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.logo {
+  width: 120px;
+  position: absolute;
+  top: 4%;
+  left: 6%;
+}
+
+.Banner-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 150px;
+}
+.Banner-text h1 {
+  font-size: 130px;
+  font-family: "Kaushan Script", cursive;
+}
+.Banner-text p {
+  font-size: 20px;
+  font-style: italic;
+}
+.box {
+  margin: 70px auto 0;
+}
+.box a {
+  width: 150px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 12px 0;
+  color: #fff;
+  border: 0.5px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+.box a span {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  z-index: -1;
+  transition: 0.3s;
+}
+.box a:hover span {
+  width: 100%;
+}
+/*========[ nav aka buger ]=======*/
+#buger {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: -250px;
+  top: 0;
+  background-color: #045a51;
+  z-index: 2;
+  transition: 0.5s;
+}
+nav ul li {
+  list-style: none;
+  margin: 50px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#menu {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background: transparent;
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  border-radius: 3px;
+  z-index: 3;
+  cursor: pointer;
+}
+#menu img {
+  width: 20px;
+  margin: 15px;
+}
+/*============[ About ]=========*/
+
+#Fun {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), white), url(Img/About.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+#info {
+  width: 100%;
+  padding-top: 100px;
+}
+h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 650;
+  font-family: "Kaushan Script", cursive;
+}
+p {
+  color: rgb(0, 1, 1);
+  font-size: 22px;
+  font-weight: 350;
+  line-height: 25px;
+  padding: 10px;
+  font: bold;
+}
+.row {
+  margin-top: 5;
+  display: flex;
+  justify-content: space-between;
+}
+.one {
+  flex-basis: 30%;
+  background: transparent;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: bolder-box;
+}
+.h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.one:hover {
+  box-shadow: 0 0 20px 0px rgba(204, 18, 18, 0.2);
+}
+/*=========[ Spots ]===========*/
+.ten {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.spots {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.spots img {
+  width: 100%;
+  display: block;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(226, 0, 0, 0.7);
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  bottom: 0;
+  font-size: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+
+/*=========[ move pics ]==========*/
+.c {
+  width: 100%;
+  height: 800px;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+}
+
+.mid {
+  width: 100px;
+  height: 800px;
+  box-sizing: border-box;
+}
+
+.ci {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+}
+
+.left {
+  width: 300%;
+  height: 600px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: slide 15s reverse;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -100%;
+  }
+  30% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  60% {
+    left: -200%;
+  }
+  90% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
+.ht {
+  font-size: 46px;
+  color: black;
+  text-align: left;
+  position: absolute;
+  margin-left: 800px;
+  margin-top: 250px;
+  transform: translate(-50%, -50%);
+  font: bold;
+  font-family: "Kaushan Script", cursive;
+}
+.ht1 {
+  position: center;
+  font-size: 36px;
+  color: black;
+  text-align: left;
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 800px;
+  transform: translate(-50%, -50%);
+  font-family: "Kaushan Script", cursive;
+  font: bold;
+}
+.ht2 {
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 800px;
+  transform: translate(-50%, -50%);
+  font-family: "Kaushan Script", cursive;
+}
+/* text-box zone-one */
+.zone-one {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #000000;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-top: 23px;
+  margin-left: 950px;
+}
+.zone-one:hover {
+  border: 1px solid #f44336;
+  background: aqua;
+  transition: 1s;
+}
+nav .fa {
+  display: none;
+}
+/* text box */
+.text-box {
+  width: 100%;
+  color: black;
+  position: absolute;
+  top: 49%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 62px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 30px;
+  color: #fff;
+}
+/*=========[ last part  ]=======*/
+.last {
+  background-image: url(Img/Contact.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.hope {
+  font-style: italic;
+}
+.email-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+
+.haha {
+  color: #333333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #333333;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-left: 250px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/*-----footer-----*/
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer h4 {
+  font-size: 20px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.social-icons {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.social-icons i {
+  margin-right: 10px;
+  cursor: pointer;
+  color: white;
+  margin: 0 13px;
+  padding: 18px 0;
+}
+.bro {
+  color: #fff;
+}
